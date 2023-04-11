@@ -23,3 +23,5 @@ def solution(control_npv, test_npv) -> bool: # Одна или две выбор
     t_dist = t(df=df)
     t_dist_alpha = t_dist.ppf(1 - alpha)
     reject_null = t_crit > t_dist_alpha
+    
+    return reject_null
